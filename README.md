@@ -2,8 +2,9 @@
 
 **Overview**
 This project aims to predict the outcomes of IPL matches using machine learning. The dataset comprises detailed match summaries and ball-by-ball delivery information, which are processed and analyzed to forecast match results. The core of the project is built using a Jupyter notebook (match.ipynb), which is used to develop, train, and export the predictive model as a pickle file. This model is then deployed through a web interface created with Streamlit in PyCharm, allowing users to interact with the model and make predictions in real time.
-File Structure**
-**	•	matches.csv: Contains summaries of each match including details like match date, teams, score, and outcome.
+
+**File Structure**
+	•	matches.csv: Contains summaries of each match including details like match date, teams, score, and outcome.
 	•	deliveries.csv: Provides ball-by-ball action of each match, detailing each delivery's outcomes, such as runs scored, wickets taken, etc.
 	•	match.ipynb: A Jupyter notebook that contains the data preprocessing, feature engineering, model training, and exporting the model to a pickle file.
 	•	pipe.pkl: A pickle file that contains the serialized form of the trained machine learning model.
