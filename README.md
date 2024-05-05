@@ -2,6 +2,8 @@
 
 **Overview**
 This project aims to predict the outcomes of IPL matches using machine learning. The dataset comprises detailed match summaries and ball-by-ball delivery information, which are processed and analyzed to forecast match results. The core of the project is built using a Jupyter notebook (match.ipynb), which is used to develop, train, and export the predictive model as a pickle file. This model is then deployed through a web interface created with Streamlit in PyCharm, allowing users to interact with the model and make predictions in real time.
+![image](https://github.com/manika26/Score_Predictor/assets/43421127/0467dca2-ac37-4909-b8d2-d149a3095958)
+
 
 **File Structure**
 
