@@ -1,0 +1,127 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular_wdth_opsz110000_GRAD_wght2580000;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red12\green12\blue12;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c5098\c5098\c5098;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18640\viewh12640\viewkind0
+\deftab720
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f0\b\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Overview\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\b0 \cf2 This project aims to predict the outcomes of IPL matches using machine learning. The dataset comprises detailed match summaries and ball-by-ball delivery information, which are processed and analyzed to forecast match results. The core of the project is built using a Jupyter notebook (
+\f2\fs28 match.ipynb
+\f1\fs32 ), which is used to develop, train, and export the predictive model as a pickle file. This model is then deployed through a web interface created with Streamlit in PyCharm, allowing users to interact with the model and make predictions in real time.\
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f0\b \cf2 File Structure\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\b0\fs28 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 matches.csv
+\f1\fs32 : Contains summaries of each match including details like match date, teams, score, and outcome.\cb1 \
+\ls1\ilvl0
+\f2\fs28 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 deliveries.csv
+\f1\fs32 : Provides ball-by-ball action of each match, detailing each delivery's outcomes, such as runs scored, wickets taken, etc.\cb1 \
+\ls1\ilvl0
+\f2\fs28 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 match.ipynb
+\f1\fs32 : A Jupyter notebook that contains the data preprocessing, feature engineering, model training, and exporting the model to a pickle file.\cb1 \
+\ls1\ilvl0
+\f2\fs28 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 pipe.pkl
+\f1\fs32 : A pickle file that contains the serialized form of the trained machine learning model.\cb1 \
+\ls1\ilvl0
+\f2\fs28 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 application.py
+\f1\fs32 : A Python file within a PyCharm project that contains the Streamlit code to create a user interface for the model.\cb1 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f0\b \cf2 \cb3 Setup and Installation\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Python Environment
+\f1\b0 : Ensure that Python is installed on your system. This project was developed using Python 3.8.\cb1 \
+\ls2\ilvl0
+\f0\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Library Versions
+\f1\b0 : It is crucial that the 
+\f2\fs28 scikit-learn
+\f1\fs32  library versions match in both the Jupyter notebook and the PyCharm project environments to avoid any compatibility issues with the pickle file. If there are discrepancies in the versions, update the libraries to match each other.\cb1 \
+\ls2\ilvl0
+\f0\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Dependencies Installation
+\f1\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install necessary libraries for the Jupyter notebook using:
+\fs18 \cb1 \uc0\u8232 
+\f2\fs28 \cf3 \cb2 \strokec3 pip install numpy pandas matplotlib seaborn scikit-learn jupyter \cf2 \cb1 \strokec2 \uc0\u8232 
+\f1\fs32 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 For the PyCharm project with the Streamlit interface, install:
+\fs18 \cb1 \uc0\u8232 
+\f2\fs28 \cf3 \cb2 \strokec3 pip install streamlit pickle \cf2 \strokec2 \uc0\u8232 
+\f1\fs32 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Running the Jupyter Notebook
+\f1\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to the directory containing 
+\f2\fs28 match.ipynb
+\f1\fs32  and run the notebook cells sequentially to process the data, train the model, and generate the 
+\f2\fs28 pipe.pkl
+\f1\fs32  file.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Setting up the PyCharm Project
+\f1\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Ensure that 
+\f2\fs28 application.py
+\f1\fs32  and 
+\f2\fs28 pipe.pkl
+\f1\fs32  are placed in the root of the PyCharm project directory.\cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Open the terminal within PyCharm.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	6	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Launching the Web Interface
+\f1\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In the PyCharm terminal, execute the following command to start the Streamlit web interface:
+\fs18 \cb1 \uc0\u8232 
+\f2\fs28 \cf3 \cb2 \strokec3 streamlit run application.py \cf2 \cb1 \strokec2 \uc0\u8232 
+\f1\fs32 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 This command will start the server and the interface will be accessible through a web browser at the local address provided by Streamlit (typically 
+\f2\fs28 http://localhost:8501
+\f1\fs32 ).\cb1 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f0\b \cf2 \cb3 Usage\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\b0 \cf2 Once the web interface is running, users can interact with the model through the Streamlit interface. Input the required parameters as per the match conditions, and the model will predict the outcome based on the data provided.\
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f0\b \cf2 Support\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\b0 \cf2 For any issues regarding setup, version compatibility, or running the application, please refer to the documentation of the respective libraries or feel free to raise an issue in the project repository.\
+\pard\pardeftab720\partightenfactor0
+\cf2 This README provides a comprehensive guide to getting the IPL Match Outcome Prediction project set up and running on your local machine. By following these instructions, users can seamlessly predict outcomes of IPL matches using the developed machine learning model.\
+}
